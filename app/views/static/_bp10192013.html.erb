@@ -1,0 +1,24 @@
+<div class="blog_body">
+	<h1 class="blog_body_content">Minimalist Photography Project 2</h1>
+	<h4 class="blog_body_content" style="color: rgba(0, 0, 0, 0.7);">December 19, 2013</h4>
+	<div class="blog_body_content">
+		<%= image_tag("minimal_eggs.png", height: 500) %>
+	</div>
+</div>
+
+<div class="blog_footer">
+	<br>
+	<hr>
+	<center>
+		<% if @newer then %>
+			<%= link_to(:controller => "static", :action => "blog", :id => "minimalist-photography-project") do %>
+				<div id="blog_footer_arrow", style="float:left; padding-left:4%;"><%= image_tag("left_arrow.png", height: 8) %> Newer</div>
+			<% end %>
+		<% end %>
+		<a href="#" id="blog_footer_share">Share</a>
+<!-- 		<%= link_to :controller => "static", :action => "blog", :id => "bp10192013"  do%>
+			<div id="blog_footer_arrow", style="float:right; padding-right:4%;">Older <%= image_tag("right_arrow.png", height: 8) %></div>
+		<% end %> -->
+	</center>
+	<hr>
+</div>

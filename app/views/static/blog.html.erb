@@ -1,0 +1,10 @@
+<div id="blog">
+	<%= render "layouts/blog_template" %>
+	<% if params.count == 2 then %>
+		<%= render "static/squaring-the-circle" %>
+	<% else %>
+		<%= render "static/#{params[:id]}" %>
+	<% end %>
+	<%= render 'layouts/blog_footer_template' %>
+</div>
+

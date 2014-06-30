@@ -1,0 +1,51 @@
+
+<div class="blog_body">
+	<h1 class="blog_header_content">Joining Yahoo!</h1>
+	<h3 class="blog_sub_header_content">2014 Summer Internship</h3>
+	<h4 class="blog_header_date_content" style="color: rgba(0, 0, 0, 0.7);">December 19, 2013</h4>
+	<div class="blog_body_content">
+	<%= image_tag("yahoo_mail.png", height: 700, :class => "image") %>
+
+	<p>“Squaring the circle is a problem proposed by ancient geometers.  It is the challenge of constructing a square with the same area as a given circle by using only a finite number of steps with compass and straightedge…The expression ‘squaring the circle’ is sometimes used as a metaphor for trying to do the impossible.” – <i>Wikipedia</i></p>
+	
+	<p>Geometrically, we find that squares can’t be circles, at least according to Wikipedia (and of course Wikipedia never lies), and any attempt square a circle would be impossible.  </p>
+
+	<p>When first coming to Stanford, I found this same truth, this divide between squares and circles, techies and fuzzies to be overwhelming on campus.  Entering your freshman dorm and meeting your hall mates for the first time, the perennial question of, “What’s your major” seems to inevitably arise.  Your first encounter with this seemingly harmless inquiry gets you excited as you tactfully respond (and for some of us, recite a well thought response).  Little do you know, your answer to this recurring question would confirm, if just subconsciously in your inquirers mind, his assumptions about you.  After you reply, stereotypes of nerdy and good at math suddenly become rationalized with your techie response, or sociable and good at writing become your strengths as a logical assumption from your fuzzy answer.</p>
+
+	<p>Throughout high school I hated the idea of being labeled or assigned a clique.  I didn’t really have a favorite subject; I equally enjoyed (or didn’t enjoy) all of them.  So initially when asked of my major, still wary of labels, I deferred to the notorious “undecided”.  This usually earned me subliminal looks of disapproval and pity, or an “Oh, don’t worry you have plenty of time”—which usually made me begin worrying.  I quickly learned that knowing, or at least acting like you knew what you were doing looked much better than not (or at least opened up more content for small talk). </p>  
+
+	<p>There seemed to exist this thing called a passion that everyone talked about must having.  So, I switched my hesitant reply of “undecided” to a pseudo-confident declaration of “computer science” and for the first time, I had an identity.  As a self-proclaimed computer science major, I was now finally “good” at something, or at least people thought I was.  And I actually did begin to get stronger in the “techie” side of things.  I was taking mostly math and computer science classes and close to zero “fuzzy” classes.</p>
+
+	<p>Entering my sophomore year, I was quite surprised and even a little disappointed at how “techie” and labeled I had allowed myself to become.  Maybe it was “sophomore slump”, but I began wondering, trying to think back to what made me get into computer science.  Was it that I just <i><strong>loved</strong></i> algorithms and data structures that much?  Being honest with myself, I realized I greatly enjoyed computer science as an intellectual pursuit, but I didn’t necessarily love it to death as a passion.  Was it bad then that I was majoring in computer science?</p>
+
+	<p>Thinking back, I remembered a time where I very much enjoyed reading a book for fun, or taking the time and patience to master an art.  Out of a sense of urgency to not completely lose this other half I had been neglecting, I quickly enrolled in Intro to Photography in an attempt to explore the “fuzzy” side of things Stanford had to offer that I of course “never had time for” before.</p>
+
+	<p>Initially I was uncomfortable, even nervous.  The class size was a mere 20 people; compared to the massive lecture halls I was used to in my computer science classes, I felt exposed.  I considered myself a pretty confident person but when I had to present my photography as a subjective art for our first assignment and defend my ideas, I felt nervous and an utter lack of confidence.  Unlike in my computer science classes where my programs did the talking for me, art wasn’t a black and white picture of right or wrong; right and wrong weren’t even the bounds—there really weren’t any bounds or limitations.  At the time this baffled me.  In computer science and engineering in general, we work within bounds and limitations.  But to truly have no bounds was an infinity I had never before encountered, and it was daunting—my world suddenly became this vast unknown.  Although I was far behind my peers in skill level and in just pure creativity, I began to really get into this photography elective, spending just as much if not more time in the dark room as in the computer lab.  I learned things about design, framing, and creativity that I never knew existed and never knew could be so practical and useful in engineering.</p>
+
+	<p>For many of us, I think we get so caught up in finding our major, and once finding a major, completing that major, that it begins to dominate our college experience.  When we are surrounded by our peers who seem to have it all figured out, and when we are constantly barraged with the question of “What’s your major?”, it’s difficult to not get caught up in the race to find a major and then subsequently rationalize it as a “passion” or an “identity”.  Our major suddenly becomes the question we ask each other upon first meeting and the first line of our bios.  It dominates our class schedule and the circle of people we often talk with.</p>
+
+	<p>Being really passionate about your major, fuzzy or techie is awesome.  But I’ve found, that exploring the other side once in a while in an honest effort can be quite refreshing and provide valuable perspectives on one’s own field of study.</p>
+
+	<p>So, is it bad that I’m majoring in computer science but it isn’t necessarily my life’s passion?  Although they often do, I don’t believe that major and passion have to coincide.  You can’t major in helping others nor can you major in eliminating poverty.  If I’ve learned anything from photography, this passion everyone expects everyone to have doesn’t have to be bound to a major.  I’m passionate about living a life that is uniquely mine.  I’m techie and fuzzy; I want to explore engineering and art; I’m a square and a circle.  I guess Wikipedia does lie, but we already knew that.</p>
+
+	</div>
+</div>
+<div class="blog_footer">
+
+	<br>
+	<hr>
+	<center>
+		<% if @newer then %>
+			<%= link_to(root_path) do %>
+				<div id="blog_footer_arrow", style="float:left; padding-left:4%;"><%= image_tag("left_arrow.png", height: 8, :class => "arrow_image") %> Newer</div>
+			<% end %>
+		<% end %>
+		<!-- <a href="#" id="blog_footer_share">Share</a> -->
+		<%= link_to :controller => "static", :action => "blog", :id => "minimalist-photography-project"  do%>
+			<div id="blog_footer_arrow", style="float:right; padding-right:4%;">Older <%= image_tag("right_arrow.png", :class => "arrow_image") %></div>
+		<% end %>
+		<br>
+	</center>
+	<hr>
+
+</div>
