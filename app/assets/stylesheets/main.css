@@ -38,19 +38,447 @@ body {
   }
 }*/
 
-/* Smartphones (portrait) ----------- */
 
-@media only screen and (min-width : 200px) and (max-width : 480px) { 
+/* iPhone Portrait ----------- */
+
+@media only screen and (max-device-width:480px) {
+
 	body {
-		background-color:red;
+		font-size: 20px;
 	}
+	#container {
+		min-height: 100%;
+		position: relative;
+		min-width: 320px;
+	}
+
+	/* Top Header Styling */
+	
+	#nav_bar {
+		background-color: red;
+		font-family: helvetica;
+		font-weight: bold;
+		font-size: 2.3em;
+		z-index: 1000;
+		height: 0px;
+
+	}
+
+/*alternate nav-bar style
+/*	#nav_bar {
+		font-family: Lato, helvetica, sans-serif;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 1.2em;
+		letter-spacing: 1px;
+		z-index: 1000;
+		height: 0px;
+	}*/
+
+	#nav_table {
+		/*min-width: 400px;*/
+		/*width: 80%;*/
+		text-align: center;
+		table-layout: fixed;
+		z-index: 1000;
+		width: 100%;
+	}
+
+	.nav_item {
+		overflow: hidden;
+		width: 10px;
+	}
+
+	.navigation_link {
+		text-decoration: none;
+		/*color: rgb(80, 80, 80);*/
+		/*color: #cfcfcf;*/
+		color: black;
+	}
+
+	.navigation_link:hover {
+	  color: rgba(0, 0, 0, 0.1);
+	}
+
+	.logo_image {
+		margin-top: 4em;
+		margin-bottom: 6em;
+		margin-right: auto;
+		margin-left: auto;
+ 		width: 300px;
+ 		height: 300px;
+ 		display:block;
+ 		background:transparent url('JY_Logo3.png') center top no-repeat;
+ 		background-size: 300px;
+
+	}
+	
+	
+	#logo_image {
+		position: relative;
+		width: 7%;
+
+		left: 48%;
+		right: 50%;
+		margin: 0 0 0 -5%;
+
+		/*float: right;*/
+		/*background-color: red;*/
+		margin-right: auto;
+		margin-left: auto;
+		/*margin-right: 3%;*/
+		margin-top: 5%;
+	
+		height: auto;
+	}
+
+	
+
+	/* Body Styling */
+
+
+	.page_title {
+		font-family: helvetica;
+		font-size: 4em;
+		color: #060606;
+	}
+
+	#body {
+		padding-bottom: 10em;
+	}
+
+	/* Blog Page Styling */
+
+
+	#blog {
+		margin-top: 50px;
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		overflow: hidden;
+	}
+
+	/* Blog Vertical Nav-Bar */
+
+
+	#left_bar {
+		width: 20%;
+		margin-left: 1em;
+		float: left;
+		overflow: auto;
+		height: 36.5em;
+
+	}
+
+	#left_table_bar {
+		border-right: 2px solid black;
+		float: right;
+		width: 90%;
+	}
+
+
+	.entry_date {
+		padding-top: 2em;
+		min-width: 190px;
+		font-family: helvetica;
+		font-weight: bold;
+		float: right;
+		color: black;
+		margin-right: 3em;
+	}
+
+	.entry_date:hover {
+		color: rgba(0, 0, 0, .1);
+	}
+
+	.number {
+		font-size: 6em;
+		float: right;
+		letter-spacing: -.15em;
+	}
+
+	.date {
+		float: right;
+		margin-left: .4em;
+		margin-top: .15em;
+		font-size: 2.5em;
+				letter-spacing: -.03em;
+
+	}
+
+	/*#like {
+		position: fixed;
+		bottom: 10%;
+		right: 60px;
+	}
+
+	#like_img {
+		position: absolute;
+		width: 50px;
+		height: auto;
+	}
+
+	#like_num {
+		position: absolute;
+		right: -30px;
+		top: 21px;
+		z-index: 1;
+		color: white;
+		font-size: .5em;
+	}*/
+
+
+	/* Blog/Body Styling */
+
+	.blog_body {
+		position: relative;
+		width: 90%;
+		min-width: 680px;
+		/*left: 10%; for left_bar*/
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 8em;
+		color: rgb(20, 20, 20);
+		/*font-family: 'Georgia','Helvetica','Avenir','Arial',sans-serif;*/
+		font-family: Minion Pro,Cambria,"Times New Roman",Times,serif;
+		letter-spacing: 0.02rem;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 21px;
+		line-height: 1.6;
+		color: #4d4d4d;
+		/*color: rgba(0,0,0,0.8);*/
+	}
+	
+	#header_table  {
+		line-height: 0px;
+	}
+
+	.blog_header_content {
+		color: #333;
+		font-family: 'Source Sans Pro', 'Helvetica','Avenir','Arial',sans-serif;
+		font-weight: 700;
+		text-decoration: none;
+		position: relative;
+		font-size: 5em;
+		letter-spacing: -0.05em;
+	}
+	.blog_sub_header_content {
+		color: #333;
+		font-family: 'Source Sans Pro', 'Helvetica','Avenir','Arial',sans-serif;
+		font-weight: 300;
+		text-decoration: none;
+		position: relative;
+		font-size: 3.8em;
+		letter-spacing: 0em;
+
+	}
+	.blog_header_date_content {
+		color: #333;
+		font-family: 'Source Sans Pro', 'Helvetica','Avenir','Arial',sans-serif;
+		font-weight: 700;
+		text-decoration: none;
+		position: relative;
+		font-size: 3.8em;
+		letter-spacing: -0.05em;
+	}
+
+	.image {
+		width: 100%;
+		height: auto;
+	}
+
+	.blog_body_content {
+		font-size: 2.5em;
+		/*background-color: blue;*/
+		margin-top: 50px;
+		/*margin-left: 5%;
+		margin-right: 22%; for left bar*/
+		font-weight: lighter;
+		margin-left: auto;
+		margin-right: auto;
+		/*width: 67%;*/
+	}
+
+	.blog_footer {
+		/*width: 54em;*/
+		width: 55%;
+		margin-left: 27%;
+	}
+
+	#blog_footer_arrow {
+		opacity: .3;
+		color: black;
+	}
+
+	#blog_footer_arrow:hover {
+			color:rgba(0, 0, 0, 1);
+			opacity: 1;
+	}
+
+	#blog_footer_share {
+		text-align: center;
+		color: rgba(0, 0, 0, 0.6);
+		margin-right: 30%;
+		margin-left: 30%;
+		text-decoration: none;
+	}
+
+	#blog_footer_share:hover {
+		color: rgba(0, 0, 0, 1);
+	}
+
+	.arrow_image {
+		width: 40%;
+		height: auto;
+	}
+
+	/* Projects Page Styling */
+
+	#projects_list {
+		font-family: arial;
+		/*font-weight: bolder;*/
+	}
+
+	.list_title {
+		font-size: 1.7em;
+	}
+
+	.list_element {
+		font-size: .9em;
+		font-family: arial;
+		font-weight: 100;
+		text-decoration: none;
+		color: #303030;
+	}
+
+	.list_element:hover {
+		 color: rgba(0, 0, 0, 0.2);
+
+	}
+
+	.thicker {
+		font-weight: 900;
+			text-decoration: none;
+
+	}
+
+
+	/* About Page Styling */
+
+	#about_image {
+		width: 40%;
+		height: auto
+	}
+
+	.about_text {
+		margin-right: auto;
+		margin-left: auto;
+		padding: 20px;
+		background-color: rgba(216, 216, 215, .1);
+		width: 30em;
+		line-height: 2em;
+		letter-spacing: -.5px;
+		color: #404040;
+	}
+
+	.about_link {
+		color: rgba(0, 0, 0, .2);
+	}
+
+	.about_link:hover {
+		color: rgba(64, 64, 64, 1);
+	}
+
+	/* Contact Page Styling */
+
+
+	#contact_container {
+		margin-top: 4%;
+		margin-right: auto;
+		margin-left: auto;
+		width: 60%;
+		background-color: rgba(216, 216, 215, .2);
+		border-radius: 25px;
+	}
+
+	#contact_image {
+		margin-top: 10%;
+		width: 25%;
+		height: auto;
+		padding: 0;
+	}
+
+	.contact_info {
+		text-align: left;
+		float: right;
+		font-size: 1em;
+	}
+
+	/* Footer Styling */
+
+
+	.clearfooter {
+		/*height: 100px;*/
+		/*width: 80%;*/
+		/*margin-right: auto;*/
+		/*margin-left: auto;*/
+		/*background-color: red;*/
+		padding-bottom: 130px;
+	}
+
+	#footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 130px;
+		z-index: -1010;
+		left: 0px;
+	}
+
+	#footer_block {
+		background-color: rgba(216, 216, 215, 0.3);
+		color: rgba(0, 0, 0, .4);
+		width: 65%;
+		height: 130px;
+		min-width: 440px;
+
+	}
+
+	#footer_text {
+		font-family: Helvetica Neue; 
+		font-weight: 200; 
+		float: right;
+		margin-right: 3%;
+		margin-top: 95px;
+	}
+
+	#social_share {
+		position: fixed;
+		bottom: 4%;
+		right: 20px;
+		z-index: 4000;
+	}
+
+	#social_icons {
+		width: 120px;
+		height: 30px;
+		float: left;
+		margin-top: 2%;
+		margin-left: 3%;
+	}
+
+
 }
 
+/*=================================================================================================*/
 
 
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 320px) {
 
+
+/* Smaller Desktop Browser ----------- */
+
+@media only screen and (max-width : 560px) and (min-device-width : 800px) { 
 	
 	#container {
 		min-height: 100%;
@@ -80,7 +508,7 @@ body {
 	}*/
 
 	#nav_table {
-		min-width: 450px;
+		min-width: 400px;
 		width: 45%;
 		text-align: center;
 		table-layout: fixed;
@@ -246,8 +674,8 @@ body {
 
 	.blog_body {
 		position: relative;
-		width: 45%;
-		min-width: 320px;
+		width: 90%;
+		min-width: 420px;
 		/*left: 10%; for left_bar*/
 		margin-right: auto;
 		margin-left: auto;
@@ -258,7 +686,7 @@ body {
 		letter-spacing: 0.02rem;
 		font-weight: 400;
 		font-style: normal;
-		font-size: 23px;
+		font-size: 21px;
 		line-height: 1.6;
 		color: #4d4d4d;
 		/*color: rgba(0,0,0,0.8);*/
@@ -299,7 +727,6 @@ body {
 		font-size: 30px;
 		letter-spacing: -0.05em;
 		top: -70px;
-		/*background-color: green;*/
 	}
 
 	.image {
@@ -458,9 +885,454 @@ body {
 	#footer_block {
 		background-color: rgba(216, 216, 215, 0.3);
 		color: rgba(0, 0, 0, .4);
-		width: 65%;
+		width: 100%;
 		height: 130px;
 		min-width: 440px;
+
+	}
+
+	#footer_text {
+		font-family: Helvetica Neue; 
+		font-weight: 200; 
+		float: right;
+		margin-right: 3%;
+		margin-top: 95px;
+	}
+
+	#social_share {
+		position: fixed;
+		bottom: 4%;
+		right: 20px;
+		z-index: 4000;
+	}
+
+	#social_icons {
+		width: 120px;
+		height: 30px;
+		float: left;
+		margin-top: 2%;
+		margin-left: 3%;
+	}
+
+
+}
+
+/*=================================================================================================*/
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 561px) and (min-device-width : 800px) {
+
+	
+	#container {
+		min-height: 100%;
+		position: relative;
+		min-width: 320px;
+	}
+
+	/* Top Header Styling */
+	
+	#nav_bar {
+		font-family: helvetica;
+		font-weight: bold;
+		font-size: 1.3em;
+		z-index: 1000;
+		height: 0px;
+
+	}
+
+/*alternate nav-bar style
+/*	#nav_bar {
+		font-family: Lato, helvetica, sans-serif;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 1.2em;
+		letter-spacing: 1px;
+		z-index: 1000;
+		height: 0px;
+	}*/
+
+	#nav_table {
+		min-width: 400px;
+		width: 45%;
+		text-align: center;
+		table-layout: fixed;
+		z-index: 1000;
+
+	}
+
+	.nav_item {
+		overflow: hidden;
+		width: 10px;
+	}
+
+	.navigation_link {
+		text-decoration: none;
+		/*color: rgb(80, 80, 80);*/
+		/*color: #cfcfcf;*/
+		color: black;
+	}
+
+	.navigation_link:hover {
+	  color: rgba(0, 0, 0, 0.1);
+	}
+	.logo_image {
+		margin-top: 7em;
+		margin-bottom: -1.5em;
+		margin-right: auto;
+		margin-left: auto;
+ 		width: 200px;
+ 		height:200px;
+
+ 		display:block;
+		background:transparent url('JY_Logo3.png') center top no-repeat;
+/*		opacity: 1;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+*/
+	}
+	.logo_image:hover {
+/*		opacity: 1;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity .55s ease-in-out;
+*/
+  	background-image: url('JY_Logo4.png');
+	}
+	
+	#logo_image {
+		position: relative;
+		width: 7%;
+
+		left: 48%;
+		right: 50%;
+		margin: 0 0 0 -5%;
+
+		/*float: right;*/
+		/*background-color: red;*/
+		margin-right: auto;
+		margin-left: auto;
+		/*margin-right: 3%;*/
+		margin-top: 5%;
+	
+		height: auto;
+	}
+
+	
+
+	/* Body Styling */
+
+
+	.page_title {
+		font-family: helvetica;
+		font-size: 4em;
+		color: #060606;
+	}
+
+	#body {
+		padding-bottom: 10em;
+	}
+
+	/* Blog Page Styling */
+
+
+	#blog {
+		margin-top: 50px;
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		overflow: hidden;
+	}
+
+	/* Blog Vertical Nav-Bar */
+
+
+	#left_bar {
+		width: 20%;
+		margin-left: 1em;
+		float: left;
+		overflow: auto;
+		height: 36.5em;
+
+	}
+
+	#left_table_bar {
+		border-right: 2px solid black;
+		float: right;
+		width: 90%;
+	}
+
+
+	.entry_date {
+		padding-top: 2em;
+		min-width: 190px;
+		font-family: helvetica;
+		font-weight: bold;
+		float: right;
+		color: black;
+		margin-right: 3em;
+	}
+
+	.entry_date:hover {
+		color: rgba(0, 0, 0, .1);
+	}
+
+	.number {
+		font-size: 6em;
+		float: right;
+		letter-spacing: -.15em;
+	}
+
+	.date {
+		float: right;
+		margin-left: .4em;
+		margin-top: .15em;
+		font-size: 2.5em;
+				letter-spacing: -.03em;
+
+	}
+
+	/*#like {
+		position: fixed;
+		bottom: 10%;
+		right: 60px;
+	}
+
+	#like_img {
+		position: absolute;
+		width: 50px;
+		height: auto;
+	}
+
+	#like_num {
+		position: absolute;
+		right: -30px;
+		top: 21px;
+		z-index: 1;
+		color: white;
+		font-size: .5em;
+	}*/
+
+
+	/* Blog/Body Styling */
+
+	.blog_body {
+		position: relative;
+		width: 80%;
+		min-width: 520px;
+		max-width: 700px;
+		/*left: 10%; for left_bar*/
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 3em;
+		color: rgb(20, 20, 20);
+		/*font-family: 'Georgia','Helvetica','Avenir','Arial',sans-serif;*/
+		font-family: Minion Pro,Cambria,"Times New Roman",Times,serif;
+		letter-spacing: 0.02rem;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 23px;
+		line-height: 1.6;
+		color: #4d4d4d;
+		/*color: rgba(0,0,0,0.8);*/
+	}
+
+	.blog_header_content {
+		/*margin-left: 5%;*/
+		color: #333;
+		font-family: 'Source Sans Pro', 'Helvetica','Avenir','Arial',sans-serif;
+		font-weight: 700;
+		text-decoration: none;
+		position: relative;
+		font-size: 50px;
+		letter-spacing: -0.05em;
+		line-height: 55px;
+		/*background-color: red;*/
+	}
+	.blog_sub_header_content {
+		margin-left: 5px;
+		color: #333;
+		font-family: 'Source Sans Pro', 'Helvetica','Avenir','Arial',sans-serif;
+		font-weight: 300;
+		text-decoration: none;
+		position: relative;
+		font-size: 30px;
+		letter-spacing: 0em;
+		top: -28px;
+		/*background-color: blue;*/
+
+	}
+	.blog_header_date_content {
+		margin-left: 5px;
+		color: #333;
+		font-family: 'Source Sans Pro', 'Helvetica','Avenir','Arial',sans-serif;
+		font-weight: 700;
+		text-decoration: none;
+		position: relative;
+		font-size: 30px;
+		letter-spacing: -0.05em;
+		top: -70px;
+		/*background-color: green;*/
+	}
+
+	.image {
+		max-width: 740px;
+		width: 100%;
+		height: auto;
+	}
+
+	.blog_body_content {
+		/*background-color: blue;*/
+		margin-top: -50px;
+		/*margin-left: 5%;
+		margin-right: 22%; for left bar*/
+		font-weight: lighter;
+		margin-left: auto;
+		margin-right: auto;
+		/*width: 67%;*/
+	}
+
+	.blog_footer {
+		width: 55%;
+		margin-left: 27%;
+	}
+
+	#blog_footer_arrow {
+		opacity: .3;
+		color: black;
+	}
+
+	#blog_footer_arrow:hover {
+			color:rgba(0, 0, 0, 1);
+			opacity: 1;
+	}
+
+	#blog_footer_share {
+		text-align: center;
+		color: rgba(0, 0, 0, 0.6);
+		margin-right: 30%;
+		margin-left: 30%;
+		text-decoration: none;
+	}
+
+	#blog_footer_share:hover {
+		color: rgba(0, 0, 0, 1);
+	}
+
+	.arrow_image {
+		width: 40%;
+		height: auto;
+	}
+
+	/* Projects Page Styling */
+
+	#projects_list {
+		font-family: arial;
+		/*font-weight: bolder;*/
+	}
+
+	.list_title {
+		font-size: 1.7em;
+	}
+
+	.list_element {
+		font-size: .9em;
+		font-family: arial;
+		font-weight: 100;
+		text-decoration: none;
+		color: #303030;
+	}
+
+	.list_element:hover {
+		 color: rgba(0, 0, 0, 0.2);
+
+	}
+
+	.thicker {
+		font-weight: 900;
+			text-decoration: none;
+
+	}
+
+
+	/* About Page Styling */
+
+	#about_image {
+		width: 40%;
+		height: auto
+	}
+
+	.about_text {
+		margin-right: auto;
+		margin-left: auto;
+		padding: 20px;
+		background-color: rgba(216, 216, 215, .1);
+		width: 30em;
+		line-height: 2em;
+		letter-spacing: -.5px;
+		color: #404040;
+	}
+
+	.about_link {
+		color: rgba(0, 0, 0, .2);
+	}
+
+	.about_link:hover {
+		color: rgba(64, 64, 64, 1);
+	}
+
+	/* Contact Page Styling */
+
+
+	#contact_container {
+		margin-top: 4%;
+		margin-right: auto;
+		margin-left: auto;
+		width: 60%;
+		background-color: rgba(216, 216, 215, .2);
+		border-radius: 25px;
+	}
+
+	#contact_image {
+		margin-top: 10%;
+		width: 25%;
+		height: auto;
+		padding: 0;
+	}
+
+	.contact_info {
+		text-align: left;
+		float: right;
+		font-size: 1em;
+	}
+
+	/* Footer Styling */
+
+
+	.clearfooter {
+		/*height: 100px;*/
+		/*width: 80%;*/
+		/*margin-right: auto;*/
+		/*margin-left: auto;*/
+		/*background-color: red;*/
+		padding-bottom: 130px;
+	}
+
+	#footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 130px;
+		z-index: -1010;
+		left: 0px;
+	}
+
+	#footer_block {
+		background-color: rgba(216, 216, 215, 0.3);
+		color: rgba(0, 0, 0, .4);
+		width: 65%;
+		height: 130px;
+		min-width: 560px;
 
 	}
 
