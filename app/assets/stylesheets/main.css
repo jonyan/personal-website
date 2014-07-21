@@ -47,11 +47,9 @@ body {
  */
 /*@media screen and (-webkit-min-device-pixel-ratio:0) { 
  select:focus, textarea:focus, input:focus {
-	 font-size: 16px;
-	 background:#eee;
   }
-}*/
-
+}
+*/
 
 /* iPhone Portrait ----------- */
 
@@ -325,8 +323,6 @@ body {
 		max-width: 450px;
 		color: #EDECEC;
 	}
-
-	
 
 	#blog_footer_twitter_follow {
 		font-family: 'Lato';
