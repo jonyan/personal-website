@@ -11,10 +11,7 @@
 			<td><h1 class="blog_header_date_content" style="color: rgba(0, 0, 0, 0.7);">December 19, 2013</h1></td>
 		</tr>
 	</table>
-<!-- 	<h1 class="blog_header_content">Joining Yahoo!</h1>
-	<h3 class="blog_sub_header_content">2014 Summer Internship</h3>
-	<h4 class="blog_header_date_content" style="color: rgba(0, 0, 0, 0.7);">December 19, 2013</h4>
- -->	<div class="blog_body_content">
+<div class="blog_body_content">
 	<%= image_tag("yahoo_mail.png", height: 700, :class => "image") %>
 
 	<p>“Squaring the circle is a problem proposed by ancient geometers.  It is the challenge of constructing a square with the same area as a given circle by using only a finite number of steps with compass and straightedge…The expression ‘squaring the circle’ is sometimes used as a metaphor for trying to do the impossible.” – <i>Wikipedia</i></p>
@@ -38,25 +35,41 @@
 	<p>Being really passionate about your major, fuzzy or techie is awesome.  But I’ve found, that exploring the other side once in a while in an honest effort can be quite refreshing and provide valuable perspectives on one’s own field of study.</p>
 
 	<p>So, is it bad that I’m majoring in computer science but it isn’t necessarily my life’s passion?  Although they often do, I don’t believe that major and passion have to coincide.  You can’t major in helping others nor can you major in eliminating poverty.  If I’ve learned anything from photography, this passion everyone expects everyone to have doesn’t have to be bound to a major.  I’m passionate about living a life that is uniquely mine.  I’m techie and fuzzy; I want to explore engineering and art; I’m a square and a circle.  I guess Wikipedia does lie, but we already knew that.</p>
+	<p>So, is it bad that I’m majoring in computer science but it isn’t necessarily my life’s passion?  Although they often do, I don’t believe that major and passion have to coincide.  You can’t major in helping others nor can you major in eliminating poverty.  If I’ve learned anything from photography, this passion everyone expects everyone to have doesn’t have to be bound to a major.  I’m passionate about living a life that is uniquely mine.  I’m techie and fuzzy; I want to explore engineering and art; I’m a square and a circle.  I guess Wikipedia does lie, but we already knew that.</p>
 
 	</div>
 </div>
+<hr id="end_post_line">
+<h3 id="blog_footer_twitter_follow"><center>Follow me on twitter <a href="http://www.twitter.com/jonjyan">@jonjyan</a></center></h3>
+<br>
+<br>
+<hr class="horiztonal_divider">
 <div class="blog_footer">
+	<%= link_to :controller => "static", :action => "blog", :id => "minimalist-photography-project"  do%>
+	<h4 id="blog_footer_header">Read This Next:</h4>
+	<table id="header_table">
+		<tr>
+			<td><h1 class="blog_header_content">Joining Yahoo!</h1></td>
+		</tr>
+		<tr>
+			<td><h1 class="blog_sub_header_content">2014 Summer Internship</h1></td>
+		</tr>
+		<tr>
+			<td><h1 class="blog_header_date_content" style="color: rgba(0, 0, 0, 0.7);">December 19, 2013</h1></td>
+		</tr>
+	</table>
 
-	<br>
-	<hr>
+	<div class="blog_body_content">
+		<p>“Squaring the circle is a problem proposed by ancient geometers.  It is the challenge of constructing a square with the same area as a given circle by using only a finite number of steps with compass and straightedge... <span class="underline">Continue...</span></p>
+	</div>
+	<% end %>
+</div>
+<hr class="horiztonal_divider">
+
 	<center>
 		<% if @newer then %>
 			<%= link_to(root_path) do %>
 				<div id="blog_footer_arrow", style="float:left; padding-left:4%;"><%= image_tag("left_arrow.png", height: 8, :class => "arrow_image") %> Newer</div>
 			<% end %>
 		<% end %>
-		<!-- <a href="#" id="blog_footer_share">Share</a> -->
-		<%= link_to :controller => "static", :action => "blog", :id => "minimalist-photography-project"  do%>
-			<div id="blog_footer_arrow", style="float:right; padding-right:4%;">Older <%= image_tag("right_arrow.png", :class => "arrow_image") %></div>
-		<% end %>
-		<br>
-	</center>
-	<hr>
-
-</div>
+		
